@@ -1,82 +1,100 @@
 /* Algemene styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  header {
-    text-align: center;
-    color: black;
-    font-size: 150px;
-    padding: 20px;
-    font-family:'Roboto', sans-serif;
-    font-weight: 800;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Voorkomt horizontaal scrollen door fixed elementen */
+}
 
-  nav{
-    text-align: right;
-  }
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: 
+  linear-gradient(to bottom, rgba(248, 11, 149, 0.7), rgba(255, 255, 255, 1)),
+  url('../photo4.jpg') no-repeat center top;
 
-  nav > button{
-    font-size: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    margin: 5px;
-    background: white;
-    border: 1px solid black;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: black;
-    color: white;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  main {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  /* Foto slideshow */
-  .photo-gallery {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .arrow {
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #photo-container {
-    width: 500px;
-    height: 300px;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0 10px;
-  }
-  
-  .info {
-    margin-top: 10px;
-    font-size: 14px;
-    color: gray;
-  }
-  
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+
+/* Header */
+header {
+  text-align: center;
+  color: black;
+  font-size: 150px;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+nav {
+  text-align: right;
+}
+
+nav > button {
+  font-size: 20px;
+  padding: 10px 15px;
+  margin: 5px;
+  background: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+nav > button:hover {
+  background: black;
+  color: white;
+}
+
+/* Spacer */
+.spacer {
+  height: 100vh; /* Zorgt voor voldoende ruimte om te scrollen */
+}
+
+/* Collage Sectie */
+main {
+  text-align: center;
+  padding: 20px;
+  background: white,
+  linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+}
+
+.photo-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.arrow {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#photo-container {
+  width: 900px;
+  height: 800px;
+  border: 3px solid rgb(243, 220, 220);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
 
   .roboto-thin {
     font-family: "Roboto", sans-serif;
@@ -149,4 +167,3 @@ body {
     font-weight: 900;
     font-style: italic;
   }
-  
