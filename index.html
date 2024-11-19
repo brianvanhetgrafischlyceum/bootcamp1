@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+          <button id="home-btn">Home</button>
+          <button id="contact-btn">Contact</button>
+        </nav>
+        <h1>Street Art Rotterdam</h1>
+        <button id="collage-btn">Ga naar collage</button>
+      </header>
+    
+      <!-- Collage Sectie -->
+      <main id="collage" class="hidden">
+        <div class="photo-gallery">
+          <button id="prev-btn" class="arrow">←</button>
+          <div id="photo-container">
+            <!-- Foto wordt hier dynamisch geladen -->
+          </div>
+          <button id="next-btn" class="arrow">→</button>
+        </div>
+        <div class="info">
+          <p id="photo-info">Tekst over de foto, de maker, wanneer het is gemaakt.</p>
+          <p id="photo-meta">Datum foto, fotograaf, locatie.</p>
+        </div>
+      </main>
+    
+      <script src="js/script.js"></script>
+</body>
+</html>
